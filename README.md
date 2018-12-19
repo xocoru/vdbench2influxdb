@@ -1,7 +1,14 @@
 # vdbench2influxdb
 Simple script to upload vdbench results into Influxdb for Grafana visualisation
 
-1. Install InfluxDB and create database for metrics upload ```CREATE DATABASE G200``` 
+1. Install InfluxDB and create database for metrics upload:
+```
+# influx 
+Visit https://enterprise.influxdata.com to register for updates, InfluxDB server management, and monitoring.
+Connected to http://localhost:8086 version 1.1.1
+InfluxDB shell version: 1.1.1
+> create database G200;
+``` 
 2. Install Grafana and define influxdb datasource. 
 3. Run vdbench with any options that you like. 
 4. Pick ```flatfile.html``` from vdbench output directory.
